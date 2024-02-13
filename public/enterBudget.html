@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Stream Smart</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+
+<body>
+  <header>
+  <h1>Stream Smart</h1>
+  </header>
+  <!-- <nav></nav> -->
+  <main>
+    <section>
+      <h2>Step 1: Tell us your budget</h2>
+      <article>
+        <h3>How much do you want to spend on subscriptions for streaming services every month?</h3>
+        <!-- Enter Budget -->
+        <form id="enterBudget" action="/budget" method="POST">
+          <fieldset>
+            <input type="text"
+              id="budget"
+              name="budget"
+              size="30"
+              maxlength="6"
+              placeholder="20.00"
+              required
+              aria-required="true"
+              autofocus/>
+          </fieldset>
+          <legend>Enter your monthly budget</legend>
+        </form>
+        <button form="enterBudget" type="submit">Next</button>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Denyse Tolentino.</p>
+  </footer>
+</body>
+</html>
